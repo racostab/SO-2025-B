@@ -1,3 +1,11 @@
+/*
+	Programa para observar la creación de un proceso padre y un proceso hijo
+	Forma de compilar: gcc programa_1.c -o programa1
+	Ejecución: ./programa1
+	Salida: El programa imprime el ID del proceso padre y el ID del proceso hijo
+*/
+
+
 #include <sys/types.h>
 #include <stdio.h>
 #include <unistd.h>
