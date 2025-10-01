@@ -1,7 +1,7 @@
 /*
 	Programa que utiliza llamadas de sistema para crear y escribir en un archivo
-	Forma de compilar: gcc Programa_2v2.c -o programa2
-	Ejecución: ./programa2
+	Forma de compilar: gcc Syscall_v1.c -o Syscall_v1
+	Ejecución: ./Syscall_v1
 	Salida: El programa crea un archivo en la carpeta que fue ejecutado llamado "nuevo.txt"
 	en este se escribe lo que contenga la cadena texto.
 */
