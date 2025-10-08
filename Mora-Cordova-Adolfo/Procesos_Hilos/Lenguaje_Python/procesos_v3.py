@@ -1,5 +1,7 @@
 import os
 import time
+from multiprocessing import Process
+i = 1
 
 def proceso(pid):
     print("\t"* pid, end="")
@@ -9,7 +11,7 @@ def proceso(pid):
 
 def main(N):
     for i in range(1, N+1):
-        pid = os.fork()
+        pid = os.create()
         match pid:
             case -1:
                 print("Error al crear el proceso")
