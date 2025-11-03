@@ -5,13 +5,13 @@ i = 1
 
 def proceso(pid):
     print("\t"* pid, end="")
-    print(f"<PID={os.getpid()}, i={i}>")
+    print(f"<PID={os.getpid()}>")
     i+=1
     time.sleep(1)
 
 def main(N):
     for i in range(1, N+1):
-        pid = os.create()
+        pid = os.fork()
         match pid:
             case -1:
                 print("Error al crear el proceso")
